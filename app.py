@@ -89,7 +89,7 @@ def main_dashboard():
         try:
             with open("ulasan_tokopedia_full.csv", 'rb') as f:
                 df_aktif = read_safe_csv(f)
-            st.info("ℹ️ Menggunakan data internal: ulasan_tokopedia_full.csv")
+            st.info("ℹ️ Silahkan upload file CSV yang ber-isikan ulasan!")
         except Exception as e:
             st.error(f"Gagal membaca file internal: {e}")
     else:
